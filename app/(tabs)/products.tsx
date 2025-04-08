@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function CardsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Cards Screen</Text>
+      <Text style={styles.text}>Products Screen</Text>
     </View>
   );
 }

@@ -1,7 +1,6 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, Octicons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   return (
@@ -36,11 +35,29 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="payments"
+        name="explore"
         options={{
-          title: 'Payments',
+          title: 'Explore',
           tabBarIcon: ({ color }) => (
-            <Ionicons name="card-outline" size={24} color={color} />
+            <Ionicons name="search-outline" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="products"
+        options={{
+          title: 'Products',
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="bag-outline" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="schemes"
+        options={{
+          title: 'Schemes',
+          tabBarIcon: ({ color }) => (
+            <Octicons name="law" size={24} color={color} />
           ),
         }}
       />
