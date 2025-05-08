@@ -56,10 +56,10 @@ const CarbonScreen = () => {
     {
       id: 3,
       type: 'balance',
-      title: 'Total Balance',
-      value: '£8,735.67',
+      title: 'Green coins',
+      value: '20🪙', // Using the Unicode coin icon (🪙)
       subtitle: 'Spend this month so far',
-      amount: '£300',
+      amount: '300🪙',
       buttonText: 'Withdraw Green Coins'
     }
   ];
